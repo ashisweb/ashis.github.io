@@ -1,0 +1,44 @@
+{
+  "version": "1.2",
+  "media": {
+    "default_library": "repo_media",
+    "libraries": [
+      {
+        "key": "repo_media",
+        "label": "Repository media",
+        "references": {
+          "write": {
+            "mode": "root_relative",
+            "base_path": "/"
+          },
+          "allow_default_library_fallback": true
+        },
+        "limits": {
+          "max_file_size_mb": 10
+        },
+        "driver": "git",
+        "storage": {
+          "root_path": "public"
+        }
+      }
+    ]
+  },
+  "frontmatter_format": "yaml",
+  "publishing_mode": "editorial_workflow",
+  "i18n": {
+    "enabled": true,
+    "locales": [
+      "en"
+    ],
+    "default_locale": "en",
+    "prefix_default_locale": false
+  },
+  "collections": [
+    {
+      "name": "",
+      "git_path": "",
+      "file_extension": ".md",
+      "filename_pattern": ""
+    }
+  ]
+}
